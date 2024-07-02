@@ -1,0 +1,354 @@
+@charset "UTF-8";
+@font-face {
+    font-family: ProximaNova;
+    src: url(fonts/Proxima\ Nova\ Font.otf) format('opentype');
+}
+
+body {
+    font-family: "ProximaNova";
+    background-color: #EDEDED;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    background-color: #ffe600;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content img {
+    height: 35px;
+}
+
+.header-content input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+main {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.product-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.product-images {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-images img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-details-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.product-details {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details-01 {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+    }
+    
+    .product-details-container {
+        margin-right: 0;
+    }
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail-images img {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.thumbnail-images img:hover {
+    border: 1px solid #3483fa;
+}
+
+.product-details-01 > h1 {
+    margin-bottom: 0;
+}
+
+.h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: initial;
+    font-weight: normal;
+}
+
+.quick-features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.quick-feature {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-features,
+.other-features {
+    width: 48%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.feature-label {
+    font-weight: bold;
+}
+
+.feature-value {
+    text-align: right;
+}
+
+.product-details-02 h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.rating {
+    font-size: 16px;
+    color: #3483FA;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: .7em;
+    color: #777;
+}
+
+.discount {
+    color: #4caf50;
+    font-size: .8em;
+    font-weight: normal;
+}
+
+.installments,
+.shipping-info,
+.stock-info,
+.seller-info {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.buy-buttons {
+    margin-top: 20px;
+}
+
+.buy-buttons button {
+    background-color: #3483fa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.buy-buttons button:hover {
+    background-color: #2968c8;
+}
+.product-details-02 {
+    flex-basis: 75%; /* Define a largura de cada seção */
+}
+.product-description {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between; /* Para distribuir os elementos horizontalmente */
+}
+.product-reviews {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.review-summary {
+    font-size: 20px;
+    color: #3483FA;
+}
+
+.review-list .review {
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 0;
+    color: #333;
+}
+
+footer.nav-footer {
+    background-color: #f5f5f5;
+    border-top: 1px solid #dcdcdc;
+    padding: 10px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.nav-footer-user-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-footer-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.nav-footer-copyright {
+    display: block;
+    margin-bottom: 1px;
+    color: #666;
+    font-size: 1em;
+}
+
+.nav-footer-navigation {
+    margin-bottom: 1px;
+}
+
+.nav-footer-navigation__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-footer-navigation__item {
+    margin: 2px 10px;
+    font-size: 16px;
+}
+
+.nav-footer-navigation__link {
+    color: #3483fa;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+.nav-footer-navigation__link:hover {
+    text-decoration: underline;
+}
+
+.nav-footer-primaryinfo {
+    font-size: 0.7em;
+}
+
+.nav-footer-secondaryinfo {
+    color: #666;
+    font-size: 0.7em;
+    margin: 0 0 3px;
+}
+
+.nav-footer-hp {
+    display: block;
+    margin-top: 2px;
+    color: #3483fa;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+.nav-footer-hp:hover {
+    text-decoration: underline;
+}

@@ -7,6 +7,7 @@
     <link rel="shortcut icon"
     href="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/favicon.svg"
     type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,6 +17,10 @@
             <input type="text" placeholder="Buscar produtos, marcas e muito mais...">
         </div>
     </header>
+    <div class="interesse">
+        <p><strong>Também pode te interessar:</strong> profit - whey - bcaa - creatina - whey growth - albumina - kit whey</p>
+        <p id="blue">Esportes e Fitness <span>></span> Suplementos e Shakers <span>></span> Suplementos <span>></span> Kit Whey</p>
+    </div>
     <main>
         <div class="product-page">
             <div class="product-images">
@@ -30,13 +35,19 @@
                 </div>
             </div>
             <div class="product-details-01">
+                <p class="sob-tit2">Conferir mais produtos da marca Bodybuilders</p>
+                <span class="sob-tit">Novo  |  +10mil vendidos</span>
+                <div class="mais-vendido">
+                    <p id="mais-vendido">MAIS VENDIDO</p>
+                    <span>1º em Suplementos Bodybuilders</span>
+                </div>
                 <h1>Kit 2x Whey Protein + 2x Bcaa + 2x Creatina + Coqueteleira - Bodybuilders - Sabor Chocolate</h1>
                 <div class="rating">
                     <span>4.5 ★★★★☆ (5222)</span>
                 </div>
                 <div class="price">
                     <span class="original-price" style="display: block;">R$ 209,90</span>
-                    <span class="current-price">R$ 129,<sup style="font-size: .7em; font-weight: light;">90</sup></span>
+                    <span class="current-price" style="font-family: ProximaNova-Light;">R$ 129,90</span>
                     <span class="discount">38% OFF</span>
                 </div>
                 <div class="installments">
@@ -252,19 +263,70 @@
                 </div>
             </div>       
         </div>
-        <div class="product-reviews">
-            <h2>Opiniões do produto</h2>
-            <div class="review-summary">
-                <span>4.5 ★★★★☆ (5222 avaliações)</span>
-            </div>
-            <div class="review-list">
-                <div class="review">
-                    <span>★★★★★</span>
-                    <p>Excelente produto...</p>
+        <section class="product-reviews">
+            <div  class="opinioes" style="display: inline-block;">
+                <h2>Opiniões do produto</h2>
+                <div class="rating-summary">
+                    <span class="rating-score">4.5</span>
+                    <span class="total-reviews">2,590 avaliações</span>
+                    <div class="rating-bars">
+                        <!-- Rating bars -->
+                    </div>
                 </div>
-                <!-- Mais opiniões -->
+                <div class="characteristic-rating">
+                    <h3>Avaliação de características</h3>
+                    <p>Custo-benefício: <span style="color: #3483FA;">★★★★☆</span></p>
+                    <p>Sabor agradável: <span style="color: #3483FA;">★★★★☆</span></p>
+                    <p>Fácil de consumir: <span style="color: #3483FA;">★★★★☆</span></p>
+                </div>
             </div>
-        </div>
+            <div class="review-column" style="display: inline-block;">
+                <div class="photo-reviews">
+                    <h3>Opiniões com fotos</h3>
+                    <div class="photo-slider">
+                        <!-- Photos with star ratings -->
+                        <div class="photo">
+                            <img src="img/review/client01.webp" alt="Opinião com foto 1">
+                            <span>5 ★</span>
+                        </div>
+                        <div class="photo">
+                            <img src="img/review/client02.webp" alt="Opinião com foto 2">
+                            <span>5 ★</span>
+                        </div>
+                        <!-- Additional photos -->
+                    </div>
+                </div>
+                <div class="review-highlights">
+                    <h3>Opiniões em destaque</h3>
+                    <p>O produto é amplamente recomendado devido à sua ótima relação custobenefício e qualidade. A maioria dos usuários aprecia o sabor e considera o produto eficaz para os resultados desejados. No entanto, algumas críticas apontam para inconsistências no sabor e na quantidade do produto, sugerindo uma experiência variada entre os consumidores</p>
+                    <p><a href="#">Resumo com base em opiniões de compradores</a></p>
+                </div>
+                <div class="comment">
+                    <span style="color: #3483FA;">★★★★★</span>
+                    <p>Eu achei muito bom! estou com muito mais energia pra treinar e menos dores.</p>
+                    <button>É útil<span class="material-symbols-outlined">
+                        thumb_up</span>45</button><button><span class="material-symbols-outlined">
+                            thumb_down
+                            </span></button>
+                </div>
+                <div class="comment">
+                    <span style="color: #3483FA;">★★★★★</span>
+                    <p>Amei veio como falava na descrição super indico.</p>
+                    <button>É útil<span class="material-symbols-outlined">
+                        thumb_up</span>39</button><button><span class="material-symbols-outlined">
+                            thumb_down
+                            </span></button>
+                </div>
+                <div class="comment">
+                    <span style="color: #3483FA;">★★★★★</span>
+                    <p>Excelente custo benefício de ótima qualidade, recomendo.</p>
+                    <button>É útil<span class="material-symbols-outlined">
+                        thumb_up</span>32</button><button><span class="material-symbols-outlined">
+                            thumb_down
+                            </span></button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer role="contentinfo" class="nav-footer">
         <div class="nav-footer-user-info nav-bounds">

@@ -1,7 +1,18 @@
 @charset "UTF-8";
 @font-face {
     font-family: ProximaNova;
-    src: url(fonts/Proxima\ Nova\ Font.otf) format('opentype');
+    src: url(fonts/fonnts.com-Proxima_Nova_Soft_W03_Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: ProximaNova-SemiBold;
+    src: url(fonts/fonnts.com-Proxima_Nova_Semibold.otf) format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: ProximaNova-Light;
+    src: url(fonts/fonnts.com-Proxima_Nova_Light.otf) format('opentype');
+    font-weight: lighter;
 }
 
 body {
@@ -32,6 +43,22 @@ body {
     margin-left: 20px;
 }
 
+.interesse {
+    margin: 20px 81px 20px 81px;
+    font-size: .8em;
+    color: #171717;
+    font-family: ProximaNova;
+} 
+.interesse > p > span {
+    color: #171717;
+}
+
+#blue {
+    color: #3483FA;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
 main {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -46,7 +73,7 @@ main {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
-    margin: 20px auto;
+    margin: auto;
     max-width: 1100px;
 }
 
@@ -82,12 +109,43 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#mais-vendido {
+    color: #ffffff;
+    background-color: #FF7733;
+    font-size: .7em;
+    padding: 3px;
+    width: 78px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.mais-vendido > span {
+    color: #3483FA;
+    cursor: pointer;
+    font-size: small;
+}
+
 .product-details-01 {
     flex: 1;
-    padding: 20px;
+    padding: 0px;
     background-color: #fff;
     border-radius: 8px;
-    margin-bottom: 20px;
+}
+.product-details-01 > h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+.sob-tit {
+    margin: 10px 0 10px 0;
+    padding: 15px 0;
+    font-size: .9em;
+    color: #878787;
+}
+.sob-tit2 {
+    margin: 0px 0 10px 0;
+    font-size: .9em;
+    color: #3483FA;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -117,10 +175,6 @@ main {
 
 .thumbnail-images img:hover {
     border: 1px solid #3483fa;
-}
-
-.product-details-01 > h1 {
-    margin-bottom: 0;
 }
 
 .h1 {
@@ -194,7 +248,7 @@ h2 {
 .rating {
     font-size: 16px;
     color: #3483FA;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -212,7 +266,7 @@ h2 {
 
 .discount {
     color: #4caf50;
-    font-size: .8em;
+    font-size: .7em;
     font-weight: normal;
 }
 
@@ -274,6 +328,154 @@ h2 {
     padding: 10px 0;
     color: #333;
 }
+.product-reviews {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.reviews-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.review-column {
+    flex: 1;
+    display: inline-block;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 27%;
+    width: 450px;
+}
+
+.rating-summary {
+    display: flex;
+    align-items: center;
+}
+
+.rating-score {
+    font-size: 2em;
+    color: #3483FA;
+    margin-right: 10px;
+}
+
+.total-reviews {
+    font-size: 1em;
+    color: #777;
+}
+
+.rating-bars {
+    margin-left: 20px;
+    /* Add styles for rating bars */
+}
+
+.characteristic-rating p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.photo-reviews {
+    margin-top: 20px;
+}
+
+.photo-slider {
+    display: flex;
+    overflow-x: auto;
+    text-align: center;
+}
+
+.photo {
+    margin-right: 10px;
+}
+
+.photo img {
+    max-width: 100px;
+    border-radius: 4px;
+}
+
+.review-highlights {
+    margin-top: 20px;
+    color: #333;
+}
+
+.review-highlights a {
+    color: #3483FA;
+    text-decoration: none;
+}
+
+/* Modal CSS */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    color: #3483FA;
+    font-weight: bold;
+    border-radius: 8px;
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.comment {
+    margin: 20px 0px 20px 0px;
+}
+
+.comment > p {
+    margin: 10px 0px 10px 0px;
+}
+
+.comment > button {
+    font-size: .8em;
+    border: 1px solid #CCCCCC;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #afafaf;
+    background-color: #fff;
+    margin-right: 15px;
+    padding: 5px;
+}
+.comment > button:hover {
+    color: #3483FA;
+    border: 1px solid #3483FA;
+    background-color: #ccddf7;
+
+    transition: .3s;
+}
+.material-symbols-outlined {
+    font-size: 1.2em;
+    margin: 2px;
+}
+/* RODAPÉ */
 
 footer.nav-footer {
     background-color: #f5f5f5;

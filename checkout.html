@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/favicon.svg"
+        type="image/x-icon">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles-check.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="img/ml-logo.png" alt="Logo" class="logo">
+        </div>
+    </header>
+    <div class="checkout-container">
+        <h2>Escolha a forma de entrega</h2>
+        <form id="checkoutForm">
+            <div class="delivery-options">
+                <div class="option">
+                    <input type="radio" id="homeDelivery" name="delivery" value="home">
+                    <label for="homeDelivery">
+                        <div class="option-details">
+                            <span class="option-title">Enviar no meu endereço</span>
+                        </div>
+                        <div class="option-price" style="color: green;">Grátis</div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="storePickup" name="delivery" value="store">
+                    <label for="storePickup">
+                        <div class="option-details">
+                            <span class="option-title">Retirar em uma Agência Mercado Livre</span>
+                        </div>
+                        <div class="option-price" style="color: green;">Grátis</div>
+                    </label>
+                </div>
+            </div>
+            <div id="addressFields">
+                <div class="form-group">
+                    <label for="address">Endereço</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Número</label>
+                    <input type="text" id="nmr" name="nmr" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">Estado</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+                <div class="form-group">
+                    <label for="zip">CEP</label>
+                    <input type="text" id="zip" name="zip" maxlength="9" required>
+                </div>
+            </div>
+            <div class="summary">
+                <h3>Resumo da compra</h3>
+                <div class="summary-item">
+                    <span>Produto</span>
+                    <span>R$ 129,90</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Você pagará</span>
+                    <span>R$ 129,90</span>
+                </div>
+            </div>
+            <a href="https://upload.wikimedia.org/wikipedia/pt/c/c2/Vampeta_na_G-Magazine.jpg" class="continue-button">Continuar</a>
+        </form>
+    </div>
+    <footer role="contentinfo" class="nav-footer">
+        <div class="nav-footer-user-info nav-bounds">
+            <div class="nav-footer-info-wrapper">
+                <div class="nav-footer-primaryinfo"><small class="nav-footer-copyright">Copyright ©&nbsp;1999-2024
+                        Ebazar.com.br LTDA.</small>
+                    <nav class="nav-footer-navigation">
+                        <ul class="nav-footer-navigation__menu">
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://careers-meli.mercadolibre.com/pt?utm_campaign=site-mlb&amp;utm_source=mercadolibre&amp;utm_medium=mercadolibre"
+                                    class="nav-footer-navigation__link">Trabalhe conosco</a></li>
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://www.mercadolivre.com.br/ajuda/Termos-e-condicoes-gerais-de-uso_1409"
+                                    class="nav-footer-navigation__link">Termos e condições</a></li>
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://www.mercadolivre.com.br/l/promocoes"
+                                    class="nav-footer-navigation__link">Promoções</a></li>
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://www.mercadolivre.com.br/privacidade"
+                                    class="nav-footer-navigation__link">Como cuidamos da sua privacidade</a></li>
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://www.mercadolivre.com.br/acessibilidade"
+                                    class="nav-footer-navigation__link">Acessibilidade</a></li>
+                            <li class="nav-footer-navigation__item"><a href="https://www.mercadolivre.com.br/ajuda"
+                                    class="nav-footer-navigation__link">Contato</a></li>
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://www.mercadolivre.com.br/ajuda/23303"
+                                    class="nav-footer-navigation__link">Informações sobre seguros</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="nav-footer-secondaryinfo">CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003,
+                    Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.</p>
+            </div>
+        </div>
+        <a class="nav-footer-hp" href="https://hp.mercadolibre.com/?p=ML&amp;s=MLB&amp;d=desktop">Mercado Livre</a>
+    </footer>
+    <script src="script-check.js"></script>
+</body>
+
+</html>

@@ -23,3 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+function selecionarSabor(sabor) {
+    // Atualiza o nome do sabor selecionado
+    document.getElementById('selected-flavor').textContent = sabor.charAt(0).toUpperCase() + sabor.slice(1); // Capitaliza a primeira letra
+
+    // Aqui você pode adicionar a lógica para outras ações, como atualizar imagens, preços, etc.
+}

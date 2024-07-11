@@ -24,7 +24,7 @@ body {
 
 .header-content {
     background-color: #ffe600;
-    padding: 20px 30px;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,11 +44,11 @@ body {
 .nav-header {
     background-color: #ffe600; /* Cor de fundo do menu */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para o menu */
-    display: flex;
-    margin-left: 250px;
+    display: ruby-text;
 }
 
 .nav-menu-list {
+    color: #474519;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +56,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: .8em;
-    width: 500px;
+    max-width: 900px;
 }
 
 .nav-menu-item {
@@ -68,8 +68,7 @@ body {
     color: #333;
     padding: 10px 20px;
     display: block;
-    font-family: 'Proxima Nova', Arial, sans-serif;
-    font-weight: normal;
+    font-family: 'ProximaNova-Light', Arial, sans-serif;
 }
 
 .nav-menu-categories-link {
@@ -129,16 +128,7 @@ body {
 }
 
 .mplay {
-    background-color: #ff5722; /* Cor do tag "Grátis" */
-}
-
-/* Estilos de acessibilidade */
-[aria-expanded="false"]::after {
-    content: " \25BC"; /* Seta para baixo */
-}
-
-[aria-expanded="true"]::after {
-    content: " \25B2"; /* Seta para cima */
+    background-color: #00A650; /* Cor do tag "Grátis" */
 }
 
 .header-content img {
@@ -155,7 +145,7 @@ body {
 }
 
 .interesse {
-    margin: 20px 81px 20px 81px;
+    margin: 10px 53px;
     font-size: .8em;
     color: #171717;
     font-family: "ProximaNova", Arial, Helvetica, sans-serif;
@@ -564,13 +554,6 @@ h2 {
     display: flex;
     justify-content: space-between; /* Para distribuir os elementos horizontalmente */
 }
-.product-reviews {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 1100px;
-}
 
 .review-summary {
     font-size: 20px;
@@ -596,9 +579,8 @@ h2, h3 {
 .product-reviews {
     display: flex;
     flex-wrap: wrap; /* Permite que os elementos quebrem a linha quando necessário */
-    justify-content: space-between; /* Distribui os elementos ao longo do espaço disponível */
+    justify-content: flex-start; /* Distribui os elementos ao longo do espaço disponível */
     background-color: #ffffff;
-    border: 1px solid #e0e0e0;
     border-radius: 8px;
     margin: 20px auto;
     max-width: 1100px;
@@ -615,14 +597,6 @@ h2, h3 {
     max-width: 400px;
 }
 
-.white {
-    width: 300px;
-    background-color: #fff;
-}
-#space {
-    width: 300px;
-    background-color: #fff;
-}
 @media (max-width: 768px) {
     .product-reviews {
         flex-direction: column; /* Altera para empilhar os elementos em telas menores */
@@ -772,7 +746,7 @@ h2, h3 {
 /* RODAPÉ */
 
 footer.nav-footer {
-    background-color: #f5f5f5;
+    background-color: #FFFFFF;
     border-top: 1px solid #dcdcdc;
     padding: 10px 0;
     text-align: center;
@@ -810,7 +784,6 @@ footer.nav-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #F5F5F5;
 }
 
 .nav-footer-navigation__item {

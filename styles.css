@@ -328,6 +328,7 @@ main {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
+    font-family: "ProximaNova-Light";
 }
 
 h2 {
@@ -768,13 +769,13 @@ footer.nav-footer {
 
 .nav-footer-copyright {
     display: block;
-    margin-bottom: 1px;
-    color: #666;
+    margin: 5px auto;
+    color: #9999B3;
     font-size: 1em;
 }
 
 .nav-footer-navigation {
-    margin-bottom: 1px;
+    margin: 5px auto;
 }
 
 .nav-footer-navigation__menu {
@@ -788,17 +789,18 @@ footer.nav-footer {
 
 .nav-footer-navigation__item {
     margin: 2px 10px;
-    font-size: 16px;
+    font-size: 1.5em;
+    font-family: "ProximaNova-Light";
 }
 
 .nav-footer-navigation__link {
-    color: #3483fa;
+    color: #3F3F3F;
     text-decoration: none;
     font-size: 0.7em;
 }
 
 .nav-footer-navigation__link:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .nav-footer-primaryinfo {
@@ -806,19 +808,478 @@ footer.nav-footer {
 }
 
 .nav-footer-secondaryinfo {
-    color: #666;
+    color: #9999B3;
     font-size: 0.7em;
     margin: 0 0 3px;
 }
-
-.nav-footer-hp {
-    display: block;
-    margin-top: 2px;
-    color: #3483fa;
-    text-decoration: none;
-    font-size: 0.7em;
+@charset "UTF-8";
+@font-face {
+    font-family: ProximaNova;
+    src: url(fonts/fonnts.com-Proxima_Nova_Soft_W03_Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: ProximaNova-SemiBold;
+    src: url(fonts/fonnts.com-Proxima_Nova_Semibold.otf) format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: ProximaNova-Light;
+    src: url(fonts/fonnts.com-Proxima_Nova_Light.otf) format('opentype');
+    font-weight: lighter;
 }
 
-.nav-footer-hp:hover {
-    text-decoration: underline;
+body {
+    font-family: "ProximaNova";
+    background-color: #EDEDED;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    background-color: #ffe600;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #ffe600;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-header {
+    background-color: #ffe600; /* Cor de fundo do menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para o menu */
+    display: ruby-text;
+}
+
+.nav-menu-list {
+    color: #474519;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    font-size: .8em;
+    max-width: 900px;
+}
+
+.nav-menu-item {
+    position: relative;
+}
+
+.nav-menu-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    font-family: 'ProximaNova-Light', Arial, sans-serif;
+}
+
+.nav-menu-categories-link {
+    font-weight: normal;
+}
+
+.nav-menu-item a:hover,
+.nav-menu-item a:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-categs {
+    display: none; /* Esconde o dropdown por padrão */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.nav-menu-item:hover .nav-categs,
+.nav-menu-item:focus-within .nav-categs {
+    display: block; /* Mostra o dropdown ao passar o mouse */
+}
+
+.nav-categs-departments {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-categs-departments__list {
+    padding: 10px 20px;
+}
+
+.nav-categs-departments__list a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    font-weight: normal;
+}
+
+.nav-categs-departments__list a:hover,
+.nav-categs-departments__list a:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-link-tag--small {
+    background-color: #ff5722; /* Cor do tag "Grátis" */
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 1em;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.mplay {
+    background-color: #00A650; /* Cor do tag "Grátis" */
+}
+
+.header-content img {
+    height: 35px;
+}
+
+.header-content input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.interesse {
+    margin: 10px 53px;
+    font-size: .8em;
+    color: #171717;
+    font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+} 
+.interesse > p > span {
+    color: #171717;
+}
+
+#blue {
+    color: #3483FA;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+main {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 20px 50px;
+    max-width: 1100px;
+    font-family: "ProximaNova";
+}
+
+.product-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.product-images {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-images img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-details-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.product-details {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mais-vendido {
+    color: #ffffff;
+    background-color: #FF7733;
+    font-size: .7em;
+    padding: 3px;
+    width: 78px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+#mais-vendido02 {
+    color: #ffffff;
+    background-color: #3483FA;
+    font-size: .3em;
+    padding: 3px;
+    width: 70px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 0px;
+}
+
+.mais-vendido > span {
+    color: #3483FA;
+    cursor: pointer;
+    font-size: small;
+}
+
+.product-details-01 {
+    flex: 1;
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.product-details-01 > h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+.sob-tit {
+    margin: 10px 0 10px 0;
+    padding: 15px 0;
+    font-size: .9em;
+    color: #878787;
+}
+.sob-tit2 {
+    margin: 0px 0 10px 0;
+    font-size: .9em;
+    color: #3483FA;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+    }
+    
+    .product-details-container {
+        margin-right: 0;
+    }
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail-images img {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.thumbnail-images img:hover {
+    border: 1px solid #3483fa;
+}
+
+.h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: initial;
+    font-weight: normal;
+}
+
+.quick-features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.quick-feature {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-features,
+.other-features {
+    width: 48%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: "ProximaNova-Light";
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.feature-label {
+    font-weight: bold;
+}
+
+.ratings-reviews {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.reviews-column,
+.opinions-column {
+    width: 49%;
+}
+
+.reviews-column {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.review {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.review-author {
+    font-weight: bold;
+}
+
+.review-date {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.review-content {
+    margin-top: 10px;
+}
+
+.opinions-column {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.opinion {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.opinion-title {
+    font-weight: bold;
+}
+
+.opinion-date {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.opinion-content {
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.payment-description {
+    flex-grow: 1;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .details-container {
+        flex-direction: column;
+    }
+
+    .main-features,
+    .other-features {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .ratings-reviews {
+        flex-direction: column;
+    }
+
+    .reviews-column,
+    .opinions-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .quick-features {
+        flex-direction: column;
+    }
+
+    .quick-feature {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

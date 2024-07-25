@@ -16,6 +16,11 @@ body {
     height: 40px;
 }
 
+#ctn {
+    width: 100%;
+
+}
+
 .checkout-container {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;

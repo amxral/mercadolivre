@@ -1,3 +1,20 @@
+@charset "UTF-8";
+@font-face {
+    font-family: ProximaNova;
+    src: url(fonts/fonnts.com-Proxima_Nova_Soft_W03_Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: ProximaNova-SemiBold;
+    src: url(fonts/fonnts.com-Proxima_Nova_Semibold.otf) format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: ProximaNova-Light;
+    src: url(fonts/fonnts.com-Proxima_Nova_Light.otf) format('opentype');
+    font-weight: lighter;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -14,11 +31,6 @@ body {
 
 .logo {
     height: 40px;
-}
-
-#ctn {
-    width: 100%;
-
 }
 
 .checkout-container {
@@ -70,6 +82,7 @@ form {
 .option-title {
     font-weight: bold;
     color: #333;
+    padding: 0px 7px;
 }
 
 .option-price {
@@ -114,9 +127,9 @@ form {
 
 .continue-button {
     display: inline-block;
-    width: 93.5%;
+    width: 100%;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 0px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -132,8 +145,8 @@ form {
 }
 
 /* Footer Styles */
-.nav-footer {
-    background-color: #f5f5f5;
+footer.nav-footer {
+    background-color: #FFFFFF;
     border-top: 1px solid #dcdcdc;
     padding: 10px 0;
     text-align: center;
@@ -155,13 +168,13 @@ form {
 
 .nav-footer-copyright {
     display: block;
-    margin-bottom: 1px;
-    color: #666;
+    margin: 5px auto;
+    color: #9999B3;
     font-size: 1em;
 }
 
 .nav-footer-navigation {
-    margin-bottom: 1px;
+    margin: 5px auto;
 }
 
 .nav-footer-navigation__menu {
@@ -175,38 +188,26 @@ form {
 
 .nav-footer-navigation__item {
     margin: 2px 10px;
-    font-size: 16px;
+    font-size: 1.5em;
+    font-family: "ProximaNova-Light";
 }
 
 .nav-footer-navigation__link {
-    color: #3483fa;
+    color: #3F3F3F;
     text-decoration: none;
-    font-size: .7em;
+    font-size: 0.7em;
 }
 
 .nav-footer-navigation__link:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .nav-footer-primaryinfo {
-    font-size: .7em;
+    font-size: 0.7em;
 }
 
 .nav-footer-secondaryinfo {
-    color: #666;
-    font-size: .7em;
+    color: #9999B3;
+    font-size: 0.7em;
     margin: 0 0 3px;
 }
-
-.nav-footer-hp {
-    display: block;
-    margin-top: 2px;
-    color: #3483fa;
-    text-decoration: none;
-    font-size: .7em;
-}
-
-.nav-footer-hp:hover {
-    text-decoration: underline;
-}
-

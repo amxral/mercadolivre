@@ -34,13 +34,6 @@ header {
     background-color: #ffe600;
 }
 
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .nav-header {
     background-color: #ffe600; /* Cor de fundo do menu */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para o menu */
@@ -141,7 +134,26 @@ body {
     font-size: 16px;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+/* Estilos para alternar entre as logos */
+.logo-large {
+    display: none;
+}
+
+.logo-small {
+    display: block;
+}
+
+@media (min-width: 800px) {
+    .logo-large {
+        display: block;
+    }
+    
+    .logo-small {
+        display: none;
+    }
 }
 
 .interesse {
@@ -309,7 +321,8 @@ main {
     display: flex;
     align-items: center;
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 7px;
+    margin-right: 10px;
     border-radius: 8px;
 }
 
@@ -350,10 +363,13 @@ h2 {
 
 .feature-label {
     font-weight: bold;
+    font-size: .7em;
 }
 
 .feature-value {
     text-align: right;
+    font-size: .8em;
+    padding: 0px 4px;
 }
 
 .product-details-02 h1 {
@@ -812,6 +828,9 @@ footer.nav-footer {
     font-size: 0.7em;
     margin: 0 0 3px;
 }
+.mobile {
+    display: none;
+}
 
 @media (max-width: 800px){
 
@@ -840,15 +859,60 @@ footer.nav-footer {
     }
 
     /* CORPO PRINCIPAL DO SITE */
-
-    main {
+    .mobile {
+        display: block;
+    }
+    .pc {
+        display: none;
+    }
+    #mais-vendido {
+        color: #ffffff;
+        background-color: #FF7733;
+        font-size: .7em;
+        padding: 3px;
+        width: 78px;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 3px;
+    }
+    
+    #mais-vendido02 {
+        color: #ffffff;
+        background-color: #3483FA;
+        font-size: .3em;
+        padding: 3px;
+        width: 70px;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 3px;
+        margin-top: 0px;
+    }
+    
+    .mais-vendido > span {
+        color: #3483FA;
+        cursor: pointer;
+        font-size: small;
+    }
+    .sob-tit {
+        margin: 10px 0 10px 0;
+        padding: 15px 0;
+        font-size: .9em;
+        color: #878787;
+    }
+    .sob-tit2 {
+        margin: 0px 0 10px 0;
+        font-size: .9em;
+        color: #3483FA;
+        cursor: pointer;
+    }
+     main {
         width: 100%;
         margin: 0px 0px;
         background-color: #FFFFFF;
     }   
     .quick-feature {
         width: 100%;
-        font-size: .7em;
+        font-size: .8em;
         padding: 5px;
         margin-right: 10px;
     }
@@ -858,6 +922,11 @@ footer.nav-footer {
     .product-details {
         padding: 0;
         box-shadow: none;
+    }
+    .product-details-01 > h1 {
+        font-size: 1.5em;
+        font-family: "ProximaNova-Light";
+        margin: 10px 0px;
     }
     .product-details-02 {
         width: 100%;

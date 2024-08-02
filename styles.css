@@ -187,7 +187,7 @@ body {
 }
 
 .interesse {
-    margin: 10px 53px;
+    margin: 10px 6.5%;
     font-size: .8em;
     color: #171717;
     font-family: "ProximaNova", Arial, Helvetica, sans-serif;
@@ -206,7 +206,7 @@ main {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    margin: auto 20px 53px;
+    margin: auto;
     max-width: 1100px;
     font-family: "ProximaNova";
 }

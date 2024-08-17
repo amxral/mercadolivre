@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento via Pix</title>
+    <link rel="stylesheet" href="style-pix.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="https://www.mercadolivre.com.br/"><img src="img/ml-logo.png" alt="Logo" class="logo"></a>
+            <a href="https://www.mercadolivre.com.br/ajuda#nav-header" id="ctt">Contato</a>
+        </div>
+    </header>
+    <div class="back-green">
+        <div class="text">
+            <h1>Pague R$ 129,90 via Pix para garantir sua compra</h1>
+            <span class="material-symbols-outlined">
+                shopping_bag
+            </span>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="payment-info">
+            <div class="qr-section">
+                <h2>Escaneie este código QR para pagar</h2>
+                <ol>
+                    <li>Acesse seu Internet Banking ou app de pagamentos.</li>
+                    <li>Escolha pagar via Pix.</li>
+                    <li>Escaneie o seguinte código:</li>
+                </ol>
+                <div class="qr-code">
+                    <img src="img/qr-code.png" alt="QR Code para pagamento">
+                </div>
+                
+                <p><span class="material-symbols-outlined" style="font-size: .8em; padding: 5px;">
+                    schedule
+                    </span>Pague e será creditado na hora</p>
+            </div>
+            <div style="height: 1px; width: 100%; background-color: #e6e4e4;">
+
+            </div>
+            <div class="pix-code-section">
+                <h2>Ou copie este código para fazer o pagamento</h2>
+                <p style="color: #919191;">Escolha pagar via Pix pelo seu Internet Banking ou app de pagamentos. Depois, cole o seguinte código:</p>
+                <div class="pix-code-container">
+                    <input type="text" id="pix-code" value="00020126540014br.gov.bcb.pix0132pix_marketplace@ml.com" readonly>
+                    <button id="copy-btn">Copiar</button>
+                </div>
+                <a href="https://myaccount.mercadolivre.com.br/purchases/list#nav-header" class="view-orders">Ver em minhas compras</a>
+            </div>
+        </div>
+    </div>
+
+    <footer role="contentinfo" class="nav-footer">
+        <div class="nav-footer-user-info nav-bounds">
+            <div class="nav-footer-info-wrapper">
+                <div class="nav-footer-primaryinfo">
+                    <nav class="nav-footer-navigation">
+                        <ul class="nav-footer-navigation__menu">
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://careers-meli.mercadolivre.com/pt?utm_campaign=site-mlb&amp;utm_source=mercadolibre&amp;utm_medium=mercadolibre"
+                                    class="nav-footer-navigation__link">Trabalhe conosco</a></li>
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://www.mercadolivre.com.br/ajuda/Termos-e-condicoes-gerais-de-uso_1409"
+                                    class="nav-footer-navigation__link">Termos e condições</a></li>
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://www.mercadolivre.com.br/l/promocoes"
+                                    class="nav-footer-navigation__link">Promoções</a></li>
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://www.mercadolivre.com.br/privacidade"
+                                    class="nav-footer-navigation__link">Como cuidamos da sua privacidade</a></li>
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://www.mercadolivre.com.br/acessibilidade"
+                                    class="nav-footer-navigation__link">Acessibilidade</a></li>
+                            <li class="nav-footer-navigation__item"><a href="https://www.mercadolivre.com.br/ajuda"
+                                    class="nav-footer-navigation__link">Contato</a></li>
+                            <li class="nav-footer-navigation__item"><a
+                                    href="https://www.mercadolivre.com.br/ajuda/23303"
+                                    class="nav-footer-navigation__link">Informações sobre seguros</a></li>
+                        </ul>
+                    </nav>
+                    <small class="nav-footer-copyright">Copyright ©&nbsp;1999-2024
+                        Ebazar.com.br LTDA.</small>
+                </div>
+                <p class="nav-footer-secondaryinfo">CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003,
+                    Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('copy-btn').addEventListener('click', function() {
+    const pixCode = document.getElementById('pix-code');
+
+    // Seleciona o texto do campo de input
+    pixCode.select();
+    pixCode.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+    // Copia o texto selecionado para a área de transferência
+    navigator.clipboard.writeText(pixCode.value).catch(err => {
+        console.error('Falha ao copiar o código: ', err);
+    });
+});
+
+    </script>
+</body>
+</html>

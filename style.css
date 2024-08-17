@@ -1,0 +1,275 @@
+@charset "UTF-8";
+@font-face {
+    font-family: ProximaNova;
+    src: url(fonts/fonnts.com-Proxima_Nova_Soft_W03_Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: ProximaNova-SemiBold;
+    src: url(fonts/fonnts.com-Proxima_Nova_Semibold.otf) format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: ProximaNova-Light;
+    src: url(fonts/fonnts.com-Proxima_Nova_Light.otf) format('opentype');
+    font-weight: lighter;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #EDEDED;
+    font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+}
+header {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.196);
+}
+.header-container {
+    background-color: #ffe600;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container a {
+    text-decoration: none;
+    color: #000000;
+    font-size: .8em;
+
+}
+
+.logo {
+    height: 35px;
+}
+
+.adc-card {
+    background-color: #F5F5F5;
+    max-width: 85%;
+    margin: 10px 60px 0 40px;
+    padding: 15px; /* Adiciona um pouco de espaço interno */
+    display: flex;
+    align-items: center;
+    border-radius: 5px; /* Arredonda os cantos */
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.bf-ui-rich-text {
+    font-family: "ProximaNova", Arial, sans-serif;
+    font-size: 1em;
+    color: #333;
+}
+
+.sec-adcard {
+    margin-bottom: 20px; /* Espaço abaixo do .sec-adcard para o .form-container */
+}
+.sec-adcard h1 {
+    margin: 50px 60px 30px 40px;
+    font-size: 1.5em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre .main-content e .summary-container */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column; /* Alinha itens verticalmente */
+    width: 70%; /* Ajuste conforme necessário */
+    margin-right: 20px; /* Espaço entre o .main-content e o .summary-container */
+}
+
+.form-container {
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px 60px 0 40px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.196);
+    font-size: .9em;
+    position: relative; /* Posicionamento relativo para o botão */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Alinha o botão à direita */
+    margin: 20px 7% 50px 0px; /* Espaço acima do botão */
+}
+
+.summary-container {
+    width: 30%; /* Ajuste conforme necessário */
+    padding: 20px;
+    background-color: #F5F5F5;
+    font-size: 1em;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "ProximaNova-SemiBold" Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.resume {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.linha {
+    width: 100%;
+    margin: 10px 0px;
+    height: .7px;
+    background-color: #BFBFBF;
+}
+.dc {
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+}
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.input-group p {
+    color: #80A2CE;
+    font-size: .9em;
+    padding: 5px;
+}
+.input-group label {
+    display: block;
+    margin: 5px;
+}
+.input-group input {
+    width: 70%;
+    padding: 15px;
+    border: 1.5px solid #BFBFBF;
+    border-radius: 10px;
+}
+.input-group input:invalid {
+    border-color: #BFBFBF;
+}
+
+/* RODAPÉ */
+
+footer.nav-footer {
+    background-color: #FFFFFF;
+    border-top: 1px solid #dcdcdc;
+    padding: 10px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.nav-footer-user-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-footer-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.nav-footer-copyright {
+    display: block;
+    margin: 5px auto;
+    color: #9999B3;
+    font-size: 1em;
+}
+
+.nav-footer-navigation {
+    margin: 5px auto;
+}
+
+.nav-footer-navigation__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-footer-navigation__item {
+    margin: 2px 10px;
+    font-size: 1.5em;
+    font-family: "ProximaNova-Light";
+}
+
+.nav-footer-navigation__link {
+    color: #3F3F3F;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+.nav-footer-navigation__link:hover {
+    text-decoration: none;
+}
+
+.nav-footer-primaryinfo {
+    font-size: 0.7em;
+}
+
+.nav-footer-secondaryinfo {
+    color: #9999B3;
+    font-size: 0.7em;
+    margin: 0 0 3px;
+}
+
+/* Estilos para telas menores que 800px */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column; /* Alinha os itens verticalmente */
+    }
+
+    .main-content {
+        width: 100%; /* Ajusta a largura do conteúdo principal */
+        margin: 0; /* Remove a margem direita */
+    }
+
+    .summary-container {
+        width: 100%; /* Ajusta a largura do container de resumo */
+        height: auto; /* Permite que a altura seja ajustada conforme o conteúdo */
+        margin: 0; /* Remove a margem */
+        padding: 0px; /* Adiciona padding para consistência */
+    }
+
+    .form-container {
+        margin: 20px auto; /* Remove a margem lateral e adiciona margem inferior */
+    }
+    .input-group {
+        margin: auto;
+    }
+}
